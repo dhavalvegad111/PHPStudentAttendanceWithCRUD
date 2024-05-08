@@ -1,0 +1,38 @@
+<div>
+    <h1>View Attendance of Students</h1>
+</div>    
+<form action="view_attendance.php" method="post" autocomplete="off">
+    <table border="1">
+        <tr>
+            <label for="attendance_date" style="margin-right: 10px;">Select Date</label>
+            <input type="date" name="attendance_date" id="attendance_date" style="text-transform: uppercase;margin-bottom:20px; margin-right: 10px;">
+            <a href="view_attendance.php" class="">Get Attendance Data</a> 
+        </tr>
+        <tr>
+            <th>Sr No.</th>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Attendance Status</th>
+        </tr>
+        <!--TR-START-->          
+        <tr>
+            <td>--COUNTER--</td>
+            <td>--ID--</td>
+            <td>--NAME--</td>
+            <td>
+                <!-- <label for="status">Attendance Status</label> -->
+                <input type="radio" id="present" name="attendance_status" value="Present" --PRESENT-->
+                <label for="present">Present</label>
+                <input type="radio" id="absent" name="attendance_status" value="Absent" --ABSENT-->
+                <label for="absent">Absent</label>
+            </td>
+        </tr>
+        <!--TR-END-->
+    </table>
+    <div style="margin-top: 20px;">
+        <a href="javascript:self.history.back()" class="">Go Back</a>
+    </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<div>
+    <h1>Update Student Data</h1>
+</div>
+<table>    
+    <form action="edit.php" method="post" autocomplete="off">
+        <!--U-TR-START-->
+        <tr>
+            <td><label for="name">Student Name:</label></td>
+            <td><input type="text" name="name" placeholder="Enter student name..." value="--U-NAME--"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td><input type="radio" id="male" name="gender" value="Male" --MALE-->
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" --FEMALE-->
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" --OTHER--><label for="other">Other</label></td>
+            
+        </tr>
+        <tr>
+            <td><label for="status">Marital Status:</label></td>
+            <td><input type="radio" id="unmarried" name="status" value="Unmarried" --UNMARRIED-->
+            <label for="unmarried">Unmarried</label>
+            <input type="radio" id="married" name="status" value="Married" --MARRIED-->
+            <label for="married">Married</label></td>
+            
+        </tr>
+        <tr>
+            <td><label for="birthdate">Birthdate:</label></td>
+            <td><input type="date" name="birthdate" id="birthdate" style="text-transform: uppercase;" value="--U-BIRTHDATE--"></td>
+        </tr>
+        <tr>
+            <td><label for="city">City:</label></td>
+            <td><input type="text" name="city" id="city" placeholder="Enter city..." value="--U-CITY--"></td>
+        </tr>
+        <!-- <tr>
+            <td><label for="hobbies">Hobbies:</label></td>
+            <td>
+                <input type="checkbox" name="hobbies[]" id="hobbies[]" value="--U-HOBBIES--">Watching TV
+                <input type="checkbox" name="hobbies[]" id="hobbies[]" value="--U-HOBBIES--">Reading
+                <input type="checkbox" name="hobbies[]" id="hobbies[]" value="--U-HOBBIES--">Writing
+                <input type="checkbox" name="hobbies[]" id="hobbies[]" value="--U-HOBBIES--">Travelling
+            </td>
+        </tr> -->
+        <tr>
+            <td><input type="hidden" name="uid" value="--ID--"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="edit" value="Update"> <br><br> <a href="view.php" name="view">View Student Data</a></td>
+        </tr>
+        <!--U-TR-END-->
+    </form>
+</table>

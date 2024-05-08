@@ -1,0 +1,45 @@
+<div>
+    <h1>View Student Data</h1>
+    <a href="index.php" class="">Add Student</a> | <a href="view_attendance.php" class="">View Attendance</a> | <a href="#" class="">Check Attendance</a> 
+</div>
+<br>
+<form action="index.php" method="post" autocomplete="off">
+    <table border="1">
+        <tr>
+            <th>Sr No.</th>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Marital Status</th>
+            <th>Date of Birth</th>
+            <th>City</th>
+            <th>Attendance Date</th>
+            <th>Attendance Status</th>
+            <th>Attendance</th>
+            <th>Actions</th>
+        </tr>
+        <!--TR-START-->          
+        <tr>
+            <td>--COUNTER--</td>
+            <td>--UID--</td>
+            <td>--NAME--</td>
+            <td>--GENDER--</td>
+            <td>--STATUS--</td>
+            <td>--BIRTHDATE--</td>
+            <td>--CITY--</td>
+            <td>--ATTENDANCE-DATE--</td>
+            <td>--ATTENDANCE-STATUS--</td>
+            <td>
+                <a href="present.php?id=--UID--&a=--ATTENDANCE-DATE--" class="presentBtn" name="present">Present</a> | 
+                <a href="absent.php?id=--UID--&a=--ATTENDANCE-DATE--" class="absentBtn" name="absent">Absent</a>
+            </td>
+            <td>                                        
+                <a href="edit.php?id=--UID--" class="updateBtn" name="update">Update</a> | 
+                <a href="delete.php?id=--UID--" onclick="return confirm('Are you sure you want to delete --NAME--?');" name="delete" class="deleteBtn">Delete</a>
+            </td>
+        </tr>
+        <!--TR-END-->
+    </table>
+</form>
+<br>
+<div class="msg"><!--MSG--></div>

@@ -1,0 +1,46 @@
+    <div>
+        <h1>Add New Student</h1>
+    </div>
+    <table>    
+        <form action="index.php" method="POST" autocomplete="off">
+            <tr>
+                <td><label for="name">Student Name:</label></td>
+                <td><input type="text" name="name" placeholder="Enter student name..."></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" id="male" name="gender" value="Male" checked><label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label></td>                
+            </tr>
+            <tr>
+                <td><label for="status">Marital Status:</label></td>
+                <td><input type="radio" id="unmarried" name="status" value="Unmarried" checked>
+                <label for="unmarried">Unmarried</label>
+                <input type="radio" id="married" name="status" value="Married">
+                <label for="married">Married</label></td>
+                
+            </tr>       
+            <tr>
+                <td><label for="birthdate">Birthdate:</label></td>
+                <td><input type="date" name="birthdate" id="birthdate" style="text-transform: uppercase;"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" name="city" id="city" placeholder="Enter city..."></td>
+            </tr>           
+            <!-- <tr>
+                <td><label for="hobbies">Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" name="hobbies[]" id="hobbies[]" value="Watching TV">Watching TV
+                    <input type="checkbox" name="hobbies[]" id="hobbies[]" value="Reading">Reading
+                    <input type="checkbox" name="hobbies[]" id="hobbies[]" value="Writing">Writing
+                    <input type="checkbox" name="hobbies[]" id="hobbies[]" value="Travelling">Travelling
+                </td>
+            </tr> -->
+            <tr>
+                <td><input type="submit" name="add" value="Add Student"> <input type="reset" name="reset" value="Reset"><br><br><a href="view.php" name="view">View Student Data</a></td>
+            </tr>
+        </form>
+    </table>
+ 
